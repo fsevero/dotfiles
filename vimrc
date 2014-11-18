@@ -211,4 +211,6 @@ set nofoldenable
 
 
 " NERDTreeToggle
+" cd ~/.vim/bundle
+" git clone https://github.com/scrooloose/nerdtree.git
 map <C-\> :NERDTreeToggle<CR>
