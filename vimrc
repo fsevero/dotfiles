@@ -19,6 +19,9 @@ autocmd! bufwritepost .vimrc source %
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+" Use system clipboard
+" make sure "vim --version | grep clipboard" returns "+clipboard"
+" Try installing "sudo apt-get install vim-gtk" if it shows "-clipboard"
 
 " Mouse and backspace
 set mouse=a  " on OSX press ALT and click
@@ -133,11 +136,6 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
-
-" Use system clipboard
-" make sure "vim --version | grep clipboard" returns "+clipboard"
-" Try installing "sudo apt-get install vim-gtk" if it shows "-clipboard"
-set clipboard=unnamedplus
 
 
 " Setup Pathogen to manage your plugins
