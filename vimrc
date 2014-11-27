@@ -7,6 +7,11 @@
 " DO NOT USE <C-z> FOR SAVING WHEN PRESENTING!
 " ============================================
 
+" Rebind <Leader> key
+" I like to have it here becuase it is easier to reach than the default and
+" it is next to ``m`` and ``n`` which I use for navigating between tabs.
+let mapleader = ","
+
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
@@ -19,6 +24,10 @@ autocmd! bufwritepost .vimrc source %
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+" Copy & Paste to system clipboard
+map <Leader>c "+y
+map <Leader>v "+p
+
 " Use system clipboard
 " make sure "vim --version | grep clipboard" returns "+clipboard"
 " Try installing "sudo apt-get install vim-gtk" if it shows "-clipboard"
@@ -26,12 +35,6 @@ set clipboard=unnamed
 " Mouse and backspace
 set mouse=a  " on OSX press ALT and click
 set bs=2     " make backspace behave like normal again
-
-
-" Rebind <Leader> key
-" I like to have it here becuase it is easier to reach than the default and
-" it is next to ``m`` and ``n`` which I use for navigating between tabs.
-let mapleader = ","
 
 
 " Bind nohl
